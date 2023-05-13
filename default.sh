@@ -400,7 +400,7 @@ EXTERNAL_URL="https://$(printenv mosip-api-host)"
 echo "URL : $URL and $EXTERNAL_URL"
 
 if [ "$ENABLE_INSECURE" = "true" ]; then
-  INSECURE='--insecure'
+  export INSECURE='--insecure'
 fi
 
 if [ "$MODULE" = "ida" ]; then
